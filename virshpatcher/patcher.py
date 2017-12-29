@@ -12,7 +12,7 @@ class XMLPatcher(object):
 
     def patch(self, tree, args):
         for patch_set in self.nodes:
-            node = tree.getroot()
+            node = tree
 
             for tag in patch_set:
                 creator = getattr(
